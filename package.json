@@ -1,0 +1,32 @@
+{
+  "name": "selenoid",
+  "version": "0.0.1",
+  "description": "Selenoid and browser drivers for Selenium tests.",
+  "bin": {
+    "selenoid": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-popov-tech/selenoid.git"
+  },
+  "keywords": [
+    "aerokube",
+    "selenoid",
+    "selenium",
+    "webdriver-manager"
+  ],
+  "author": "Alexander Popov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-popov-tech/selenoid/issues"
+  },
+  "homepage": "https://github.com/alex-popov-tech/selenoid#readme",
+  "dependencies": {
+    "@slimio/async-cli-spinner": "^0.5.2",
+    "got": "10.6.0",
+    "tar-fs": "2.0.0",
+    "unzip-stream": "^0.3.0",
+    "unzipper": "0.10.10",
+    "yargs": "15.1.0"
+  }
+}
