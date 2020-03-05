@@ -5,6 +5,11 @@
   "bin": {
     "selenoid": "./bin/index.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "node bin/index.js update"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alex-popov-tech/selenoid.git"
@@ -24,15 +29,10 @@
   "dependencies": {
     "@slimio/async-cli-spinner": "^0.5.2",
     "got": "10.6.0",
-    "husky": "^4.2.3",
+    "husky": "4.2.3",
     "tar-fs": "2.0.0",
-    "unzip-stream": "^0.3.0",
+    "unzip-stream": "0.3.0",
     "unzipper": "0.10.10",
     "yargs": "15.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "node bin/index.js"
-    }
   }
 }
