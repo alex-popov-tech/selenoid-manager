@@ -1,7 +1,7 @@
 {
   "name": "selenoid",
-  "version": "0.0.1",
-  "description": "Selenoid and browser drivers for Selenium tests.",
+  "version": "0.1.0",
+  "description": "Selenoid and browser drivers for your Selenium tests.",
   "bin": {
     "selenoid": "./bin/index.js"
   },
