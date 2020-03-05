@@ -31,6 +31,8 @@
     "yargs": "15.1.0"
   },
   "husky": {
-    "pre-push": "node bin/index.js"
+    "hooks": {
+      "pre-push": "node bin/index.js"
+    }
   }
 }
