@@ -1,6 +1,6 @@
 {
   "name": "selenoid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Selenoid and browser drivers for your Selenium tests.",
   "bin": {
     "selenoid": "./bin/index.js"
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/alex-popov-tech/selenoid#readme",
   "dependencies": {
-    "@slimio/async-cli-spinner": "^0.5.2",
+    "@slimio/async-cli-spinner": "0.5.2",
+    "del": "5.1.0",
     "got": "10.6.0",
     "husky": "4.2.3",
     "tar-fs": "2.0.0",

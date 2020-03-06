@@ -2,7 +2,7 @@ const { promisify } = require('util');
 const writeFile = promisify(require('fs').writeFile);
 
 module.exports = {
-  generateConfig: async ({ filepath, chromedriver, geckodriver, operadriver }) => {
+  generateConfig: async ({ filepath, chromedriverPath, geckodriverPath, operadriverPath }) => {
     await writeFile(filepath, JSON.stringify(
       {
         chrome: {
@@ -10,7 +10,7 @@ module.exports = {
           versions: {
             latest: {
               image: [
-                chromedriver,
+                chromedriverPath,
                 '--whitelisted-ips=',
                 '--verbose'
               ],
@@ -24,7 +24,7 @@ module.exports = {
           versions: {
             latest: {
               image: [
-                geckodriver,
+                geckodriverPath,
                 '--host',
                 '127.0.0.1',
                 '--log',
@@ -40,7 +40,7 @@ module.exports = {
           versions: {
             latest: {
               image: [
-                operadriver,
+                operadriverPath,
                 '--whitelisted-ips=\'\'',
                 '--verbose'
               ],

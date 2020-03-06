@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { SELENOID_PATH, SELENOID_CONFIG_PATH, CHROMEDRIVER_PATH, GECKODRIVER_PATH, OPERADRIVER_PATH } = require('../constants');
+const { DOWNLOAD_OUTPUT_PATH, SELENOID_PATH, SELENOID_CONFIG_PATH, CHROMEDRIVER_PATH, GECKODRIVER_PATH, OPERADRIVER_PATH } = require('../constants');
 const { start } = require('../start');
 const { update } = require('../update');
 
@@ -22,7 +22,7 @@ require('yargs')
     desc: 'Update selenoid and drivers',
     handler: () => {
       try {
-        update({ selenoid: SELENOID_PATH, selenoidConfig: SELENOID_CONFIG_PATH, chromedriver: CHROMEDRIVER_PATH, geckodriver: GECKODRIVER_PATH, operadriver: OPERADRIVER_PATH })
+        update({ downloadOutputPath: DOWNLOAD_OUTPUT_PATH, selenoidPath: SELENOID_PATH, selenoidConfigPath: SELENOID_CONFIG_PATH, chromedriverPath: CHROMEDRIVER_PATH, geckodriverPath: GECKODRIVER_PATH, operadriverPath: OPERADRIVER_PATH })
       } catch (err) {
         console.error(err.message);
         process.exit(1);
