@@ -6,6 +6,8 @@ const chmod = promisify(fs.chmod);
 const del = require('del');
 const rename = promisify(fs.rename);
 const readdir = promisify(fs.readdir);
+const stat = promisify(fs.stat);
+const mkdir = promisify(fs.mkdir);
 const { platform, arch } = require('os');
 const got = require('got');
 const { extract } = require('tar-fs');
@@ -15,6 +17,7 @@ const Spinner = require("@slimio/async-cli-spinner");
 
 module.exports = {
   update: async ({ downloadOutputPath, selenoidPath, selenoidConfigPath, chromedriverPath, geckodriverPath, operadriverPath }) => {
+    await ensureDir(downloadOutputPath);
     await clean(downloadOutputPath);
     const driversInfo = await latestBrowsersConfig();
     await Promise.all([
@@ -29,6 +32,10 @@ module.exports = {
 
 const normalizedPlatform = { win32: 'windows' }[platform()] || platform();
 const normalizedArch = { x64: 'amd64', x32: '386' }[arch()];
+
+const ensureDir = async path => {
+  await stat(path).catch(() => mkdir(path));
+}
 
 const clean = async dirPath => {
   await Promise.all(
