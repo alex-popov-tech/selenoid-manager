@@ -6,6 +6,8 @@
 
 Selenoid and browser drivers for your Selenium tests.
 
+![](selenoid.gif)
+
 ## Getting Started
 
 `npm install -g selenoid-manager`
