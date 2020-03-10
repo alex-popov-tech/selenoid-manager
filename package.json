@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Selenoid and browser drivers for your Selenium tests.",
   "main": "index.js",
+  "engines": {
+    "node": ">= 12.16.1"
+  },
   "bin": {
     "selenoid-manager": "./bin/index.js"
   },

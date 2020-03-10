@@ -8,6 +8,10 @@ Selenoid and browser drivers for your Selenium tests.
 
 ![](selenoid.gif)
 
+## Requirements
+
+[NodeJS 12+](https://nodejs.org/en/download/)
+
 ## Getting Started
 
 `npm install -g selenoid-manager`
