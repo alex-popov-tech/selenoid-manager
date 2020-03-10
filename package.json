@@ -1,9 +1,10 @@
 {
-  "name": "selenoid",
-  "version": "0.1.4-alpha",
+  "name": "selenoid-manager",
+  "version": "0.1.0-alpha",
   "description": "Selenoid and browser drivers for your Selenium tests.",
+  "main": "index.js",
   "bin": {
-    "selenoid": "./bin/index.js"
+    "selenoid-manager": "./bin/index.js"
   },
   "husky": {
     "hooks": {
@@ -12,27 +13,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alex-popov-tech/selenoid.git"
+    "url": "git+https://github.com/alex-popov-tech/selenoid-manager.git"
   },
   "keywords": [
     "aerokube",
+    "cm",
     "selenoid",
+    "selenoid-manager",
     "selenium",
     "webdriver-manager"
   ],
   "author": "Alexander Popov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alex-popov-tech/selenoid/issues"
+    "url": "https://github.com/alex-popov-tech/selenoid-manager/issues"
   },
-  "homepage": "https://github.com/alex-popov-tech/selenoid#readme",
+  "homepage": "https://github.com/alex-popov-tech/selenoid-manager#readme",
   "dependencies": {
     "@slimio/async-cli-spinner": "0.5.2",
     "del": "5.1.0",
     "got": "10.6.0",
-    "husky": "4.2.3",
     "tar-fs": "2.0.0",
     "unzipper": "0.10.10",
     "yargs": "15.1.0"
+  },
+  "devDependencies": {
+    "husky": "4.2.3"
   }
 }

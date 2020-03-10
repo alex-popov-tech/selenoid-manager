@@ -1,22 +1,22 @@
-[![NPM Version](https://badge.fury.io/js/selenoid.svg)](https://badge.fury.io/js/selenoid)
-![NPM Downloads Per Month](https://img.shields.io/npm/dm/selenoid.svg)
+[![NPM Version](https://badge.fury.io/js/selenoid-manager.svg)](https://badge.fury.io/js/selenoid)
+![NPM Downloads Per Month](https://img.shields.io/npm/dm/selenoid-manager.svg)
 [![Join the chat at https://t.me/js_for_testing](https://img.shields.io/badge/join%20chat-telegram-blue.svg)](https://t.me/js_for_testing)
 
-# Selenoid
+# Selenoid-manager
 
 Selenoid and browser drivers for your Selenium tests.
 
 ## Getting Started
 
-`npm install -g selenoid`
+`npm install -g selenoid-manager`
 
 ## Downloading latest binaries
 
-`selenoid update`
+`selenoid-manager update`
 
 ## Start selenoid
 
-`selenoid start`
+`selenoid-manager start`
 
 ## FAQ
 
@@ -44,13 +44,13 @@ benefits of Selenoid are only here.
 And all of that is just as simple as
 
 ```
-selenoid update
+selenoid-manager update
 ```
 
 
 ## Versioning
 
-We use [npm](https://www.npmjs.com/) for versioning. for the versions available, see the [npm](https://www.npmjs.com/package/selenoid#versions) or github [releases](https://github.com/alex-popov-tech/selenoid/releases).
+We use [npm](https://www.npmjs.com/) for versioning. for the versions available, see the [npm](https://www.npmjs.com/package/selenoid-manager#versions) or github [releases](https://github.com/alex-popov-tech/selenoid/releases).
 
 See the [CHANGELOG](CHANGELOG.md) for details of all further development details and changes.
 
