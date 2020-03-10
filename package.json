@@ -1,6 +1,6 @@
 {
   "name": "selenoid-manager",
-  "version": "0.1.0-alpha",
+  "version": "1.0.0",
   "description": "Selenoid and browser drivers for your Selenium tests.",
   "main": "index.js",
   "bin": {
