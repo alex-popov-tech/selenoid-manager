@@ -24,6 +24,10 @@ Selenoid and browser drivers for your Selenium tests.
 
 `selenoid-manager start`
 
+## Available options
+
+- `SELENOID_MANAGER_VERBOSE` - pass `false` when you need to run `selenoid-manager` under some specific TTY env ( on CI f.e. )
+
 ## FAQ
 
 ### What is Selenoid ?

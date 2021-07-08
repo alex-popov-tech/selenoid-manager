@@ -22,7 +22,9 @@ require('yargs')
     desc: 'Update selenoid and drivers',
     handler: async () => {
       try {
+        const verbose = process.env.SELENOID_MANAGER_VERBOSE === 'false' ? false : true;
         await update({
+          verbose,
           downloadOutputPath: DOWNLOAD_OUTPUT_PATH,
           selenoidPath: SELENOID_PATH,
           selenoidConfigPath: SELENOID_CONFIG_PATH,

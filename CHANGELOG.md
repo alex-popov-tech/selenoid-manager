@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 (released on 2021.07.08)
+
+* final fixes for TTY issue
+
+## 1.0.1-beta (released on 2021.07.08)
+
+* try to fix TTY issues on some CI envs
+
 ## 1.0.0 (released on 2020.03.11)
 
 * Renamed package to `selenoid-manager`, since it's better describes it's purpose
