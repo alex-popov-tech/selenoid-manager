@@ -36,7 +36,7 @@
     "@slimio/async-cli-spinner": "0.5.2",
     "del": "5.1.0",
     "got": "10.6.0",
-    "tar-fs": "2.0.0",
+    "tar-fs": "2.1.2",
     "unzipper": "0.10.10",
     "yargs": "15.1.0"
   },
